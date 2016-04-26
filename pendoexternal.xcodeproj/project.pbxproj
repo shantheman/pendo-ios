@@ -6,24 +6,35 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		545259C51CCFB5B2009C285E /* pendoexternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 545259C41CCFB5B2009C285E /* pendoexternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54DA1E061CCFB91E00D5F84D /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DA1E051CCFB91E00D5F84D /* libPendo.a */; };
-/* End PBXBuildFile section */
+/* Begin PBXCopyFilesBuildPhase section */
+		54DA1E141CCFBE5600D5F84D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		545259C11CCFB5B2009C285E /* pendoexternal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pendoexternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		545259C41CCFB5B2009C285E /* pendoexternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pendoexternal.h; sourceTree = "<group>"; };
 		545259C61CCFB5B2009C285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DA1E051CCFB91E00D5F84D /* libPendo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPendo.a; sourceTree = "<group>"; };
+		54DA1E071CCFBA0600D5F84D /* PDOAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOAccount.h; sourceTree = "<group>"; };
+		54DA1E081CCFBA0600D5F84D /* PDOEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOEnvironment.h; sourceTree = "<group>"; };
+		54DA1E091CCFBA0600D5F84D /* PDOSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOSerialize.h; sourceTree = "<group>"; };
+		54DA1E0A1CCFBA0600D5F84D /* PDOVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOVisitor.h; sourceTree = "<group>"; };
+		54DA1E0B1CCFBA0600D5F84D /* Pendo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pendo.h; sourceTree = "<group>"; };
+		54DA1E161CCFBE5600D5F84D /* liblibPendoE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibPendoE.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DA1E1F1CCFC14500D5F84D /* PendoE.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PendoE.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		545259BD1CCFB5B2009C285E /* Frameworks */ = {
+		54DA1E131CCFBE5600D5F84D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DA1E061CCFB91E00D5F84D /* libPendo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +44,7 @@
 		545259B71CCFB5B2009C285E = {
 			isa = PBXGroup;
 			children = (
+				54DA1E1F1CCFC14500D5F84D /* PendoE.podspec */,
 				545259C31CCFB5B2009C285E /* pendoexternal */,
 				545259C21CCFB5B2009C285E /* Products */,
 			);
@@ -41,7 +53,7 @@
 		545259C21CCFB5B2009C285E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				545259C11CCFB5B2009C285E /* pendoexternal.framework */,
+				54DA1E161CCFBE5600D5F84D /* liblibPendoE.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -49,8 +61,12 @@
 		545259C31CCFB5B2009C285E /* pendoexternal */ = {
 			isa = PBXGroup;
 			children = (
+				54DA1E071CCFBA0600D5F84D /* PDOAccount.h */,
+				54DA1E081CCFBA0600D5F84D /* PDOEnvironment.h */,
+				54DA1E091CCFBA0600D5F84D /* PDOSerialize.h */,
+				54DA1E0A1CCFBA0600D5F84D /* PDOVisitor.h */,
+				54DA1E0B1CCFBA0600D5F84D /* Pendo.h */,
 				54DA1E051CCFB91E00D5F84D /* libPendo.a */,
-				545259C41CCFB5B2009C285E /* pendoexternal.h */,
 				545259C61CCFB5B2009C285E /* Info.plist */,
 			);
 			path = pendoexternal;
@@ -58,35 +74,23 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		545259BE1CCFB5B2009C285E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				545259C51CCFB5B2009C285E /* pendoexternal.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		545259C01CCFB5B2009C285E /* pendoexternal */ = {
+		54DA1E151CCFBE5600D5F84D /* libPendoE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 545259C91CCFB5B2009C285E /* Build configuration list for PBXNativeTarget "pendoexternal" */;
+			buildConfigurationList = 54DA1E1C1CCFBE5600D5F84D /* Build configuration list for PBXNativeTarget "libPendoE" */;
 			buildPhases = (
-				545259BC1CCFB5B2009C285E /* Sources */,
-				545259BD1CCFB5B2009C285E /* Frameworks */,
-				545259BE1CCFB5B2009C285E /* Headers */,
-				545259BF1CCFB5B2009C285E /* Resources */,
+				54DA1E121CCFBE5600D5F84D /* Sources */,
+				54DA1E131CCFBE5600D5F84D /* Frameworks */,
+				54DA1E141CCFBE5600D5F84D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = pendoexternal;
-			productName = pendoexternal;
-			productReference = 545259C11CCFB5B2009C285E /* pendoexternal.framework */;
-			productType = "com.apple.product-type.framework";
+			name = libPendoE;
+			productName = libPendoE;
+			productReference = 54DA1E161CCFBE5600D5F84D /* liblibPendoE.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,7 +101,7 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Pendo;
 				TargetAttributes = {
-					545259C01CCFB5B2009C285E = {
+					54DA1E151CCFBE5600D5F84D = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -114,23 +118,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				545259C01CCFB5B2009C285E /* pendoexternal */,
+				54DA1E151CCFBE5600D5F84D /* libPendoE */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		545259BF1CCFB5B2009C285E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		545259BC1CCFB5B2009C285E /* Sources */ = {
+		54DA1E121CCFBE5600D5F84D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +172,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -220,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -230,41 +224,21 @@
 			};
 			name = Release;
 		};
-		545259CA1CCFB5B2009C285E /* Debug */ = {
+		54DA1E1D1CCFBE5600D5F84D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = pendoexternal/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/pendoexternal",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.pendo.mobile.pendoexternal;
+				MODULEMAP_FILE = module.map;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		545259CB1CCFB5B2009C285E /* Release */ = {
+		54DA1E1E1CCFBE5600D5F84D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = pendoexternal/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/pendoexternal",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.pendo.mobile.pendoexternal;
+				MODULEMAP_FILE = module.map;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -282,14 +256,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		545259C91CCFB5B2009C285E /* Build configuration list for PBXNativeTarget "pendoexternal" */ = {
+		54DA1E1C1CCFBE5600D5F84D /* Build configuration list for PBXNativeTarget "libPendoE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				545259CA1CCFB5B2009C285E /* Debug */,
-				545259CB1CCFB5B2009C285E /* Release */,
+				54DA1E1D1CCFBE5600D5F84D /* Debug */,
+				54DA1E1E1CCFBE5600D5F84D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
