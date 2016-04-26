@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		545259C51CCFB5B2009C285E /* pendoexternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 545259C41CCFB5B2009C285E /* pendoexternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54DA1E061CCFB91E00D5F84D /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DA1E051CCFB91E00D5F84D /* libPendo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		545259C11CCFB5B2009C285E /* pendoexternal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pendoexternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		545259C41CCFB5B2009C285E /* pendoexternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pendoexternal.h; sourceTree = "<group>"; };
 		545259C61CCFB5B2009C285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DA1E051CCFB91E00D5F84D /* libPendo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPendo.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DA1E061CCFB91E00D5F84D /* libPendo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		545259C31CCFB5B2009C285E /* pendoexternal */ = {
 			isa = PBXGroup;
 			children = (
+				54DA1E051CCFB91E00D5F84D /* libPendo.a */,
 				545259C41CCFB5B2009C285E /* pendoexternal.h */,
 				545259C61CCFB5B2009C285E /* Info.plist */,
 			);
@@ -236,6 +240,10 @@
 				INFOPLIST_FILE = pendoexternal/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pendoexternal",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.pendo.mobile.pendoexternal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -252,6 +260,10 @@
 				INFOPLIST_FILE = pendoexternal/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pendoexternal",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.pendo.mobile.pendoexternal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +289,7 @@
 				545259CB1CCFB5B2009C285E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
