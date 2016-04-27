@@ -12,8 +12,9 @@ Pod::Spec.new do |s|
     s.platform = :ios, '8.0'
     s.requires_arc = true
 
-    s.public_header_files = 'Pendo/Pendo.h', 'Pendo/PDOAccount.h', 'Pendo/PDOVisitor.h', 'Pendo/PDOEnvironment.h', 'Pendo/PDOSerialize.h'
-    s.source_files = 'Pendo/*', 'Pendo/Decorators/*', 'Pendo/EventCapture/*', 'Pendo/EventUpload/*', 'Pendo/Helpers/*', 'Pendo/Logger/*', 'Pendo/Serializers/*'
+    s.ios.source_files = 'pendoexternal/*.h'
+    s.ios.public_header_files = 'pendoexternal/*.h'
+    s.ios.vendored_library = 'pendoexternal/libPendo.a'
 
     s.frameworks = 'UIKit', 'Security'
     s.module_name = 'PendoE'
