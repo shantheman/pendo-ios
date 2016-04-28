@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54C8C6A91CD295C8004CFBCE /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
+		54D4133F1CD2A08C00105DDC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 54D4133E1CD2A08C00105DDC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		54C8C6A61CD295C8004CFBCE /* PDOSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOSerialize.h; sourceTree = "<group>"; };
 		54C8C6A71CD295C8004CFBCE /* PDOVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOVisitor.h; sourceTree = "<group>"; };
 		54C8C6A81CD295C8004CFBCE /* Pendo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pendo.h; sourceTree = "<group>"; };
+		54D4133D1CD2A08C00105DDC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		54D4133E1CD2A08C00105DDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		54DA1E161CCFBE5600D5F84D /* libPendo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPendo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DA1E1F1CCFC14500D5F84D /* Pendo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pendo.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +52,8 @@
 		545259B71CCFB5B2009C285E = {
 			isa = PBXGroup;
 			children = (
+				54D4133D1CD2A08C00105DDC /* LICENSE */,
+				54D4133E1CD2A08C00105DDC /* README.md */,
 				54DA1E1F1CCFC14500D5F84D /* Pendo.podspec */,
 				54C8C6A11CD295C8004CFBCE /* pendo-ios */,
 				545259C21CCFB5B2009C285E /* Products */,
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D4133F1CD2A08C00105DDC /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
