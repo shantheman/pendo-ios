@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.name     = 'PendoE'
+    s.name     = 'Pendo'
     s.version  = '0.0.3'
     s.summary  = 'Pengo agent for iOS'
     s.homepage = 'http://www.pendo.io'
@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
     s.platform = :ios, '8.0'
     s.requires_arc = true
 
-    s.ios.source_files = 'pendoexternal/*.h'
-    s.ios.public_header_files = 'pendoexternal/*.h'
-    s.ios.vendored_library = 'pendoexternal/libPendo.a'
+    s.ios.source_files = 'pendo-ios/*.h'
+    s.ios.public_header_files = 'pendo-ios/*.h'
+    s.ios.vendored_library = 'pendo-ios/libPendo.a'
 
     s.frameworks = 'UIKit', 'Security'
-    s.module_name = 'PendoE'
+    s.module_name = 'Pendo'
 
 end
