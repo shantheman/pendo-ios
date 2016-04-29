@@ -106,5 +106,5 @@ Here are some best practices to make the most out of Pendo:
 
 # Support
 
-We would love to hear from you: feedback, question, bugs, you name it. Drop us a line at `awesome.support@pendo.io` and a human will follow up. 
+We would love to hear from you: feedback, question, bugs, you name it. [Drop us a line](https://pendo.desk.com/customer/portal/emails/new) and a human will follow up. 
 
