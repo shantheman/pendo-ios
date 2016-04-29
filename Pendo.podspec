@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.homepage = 'http://www.pendo.io'
     s.license  = 'Commercial'
     s.authors  = { 'Antonio Rodriguez' => 'antonio@pendo.io' }
-    s.source   = { :git => 'https://github.com/pendo-io/pendo-ios-external.git', :tag => s.version}
+    s.source   = { :git => 'https://github.com/pendo-io/pendo-ios.git', :tag => s.version}
     s.social_media_url = 'https://twitter.com/pendoio'
 
     s.platform = :ios, '8.0'
