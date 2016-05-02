@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		540DE0FE1CD798B900920138 /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DA1E161CCFBE5600D5F84D /* libPendo.a */; };
 		540DE0FF1CD7995800920138 /* PDOAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A41CD295C8004CFBCE /* PDOAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540DE1001CD7995800920138 /* PDOEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A51CD295C8004CFBCE /* PDOEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540DE1011CD7995800920138 /* PDOSerialize.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A61CD295C8004CFBCE /* PDOSerialize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,7 +16,8 @@
 		540DE1071CD7996F00920138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540DE1051CD7996F00920138 /* Foundation.framework */; };
 		540DE10A1CD7998700920138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540DE1091CD7998700920138 /* UIKit.framework */; };
 		540DE10C1CD79A0A00920138 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540DE10B1CD79A0A00920138 /* Security.framework */; };
-		540DE10E1CD79C1B00920138 /* libPendo.a in Resources */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
+		540DE10E1CD79C1B00920138 /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
+		540DE1121CD7A0AE00920138 /* libPendo.a in Resources */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
 		54C8C6A91CD295C8004CFBCE /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 				540DE10A1CD7998700920138 /* UIKit.framework in Frameworks */,
 				540DE1061CD7996F00920138 /* CoreFoundation.framework in Frameworks */,
 				540DE1071CD7996F00920138 /* Foundation.framework in Frameworks */,
-				540DE0FE1CD798B900920138 /* libPendo.a in Frameworks */,
+				540DE10E1CD79C1B00920138 /* libPendo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540DE10E1CD79C1B00920138 /* libPendo.a in Resources */,
+				540DE1121CD7A0AE00920138 /* libPendo.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +250,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pendo-ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.pendo.mobile.Pendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -267,6 +271,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pendo-ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.pendo.mobile.Pendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					i386,
+					arm64,
+					armv7,
+				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -325,6 +339,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					i386,
+					arm64,
+					armv7,
+				);
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -401,6 +421,7 @@
 				540DE0FC1CD7989200920138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		545259BB1CCFB5B2009C285E /* Build configuration list for PBXProject "pendo-ios" */ = {
 			isa = XCConfigurationList;
