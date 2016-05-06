@@ -19,9 +19,23 @@ Pendo is currently distributed as a static library. Follow these instructions to
   - Download Pendo.zip
   - Unzip and copy libPendo.a and Pendo.h to your project.
   - Go to `Other Linker Flags` on `Build Settings` and include `-all_load`.
-  - (Optional) Import the Pendo header on your bridging header if you use Swift. 
+  - (Optional) Import the Pendo header on your bridging header if your project uses Swift. 
  
 A note on installation: Once Pendo is publicly available, the SDK will be available on dependency management systems (e.g.: CocoaPods, Carthage).
+
+## Dependency Managers
+
+### Cocoapods
+
+Add the following to your Podfile:
+
+`pod 'Pendo', '~> 0.0.5'`
+
+If you are using Swift, you may need to add `Pendo.h` to your bridging header.
+
+### Carthage
+
+Carthage is not yet supported. Stay tuned for updates!
 
 # Using Pendo
 
@@ -31,9 +45,7 @@ Pendo-iOS has been designed from the ground up to be non-intrusive and self-cont
 
 ### Swift
 
-```swift
-import Pendo
-	
+```swift	
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     /// Initialize Pendo
     Pendo.startWithApiKey("PENDO_API_KEY")
@@ -44,8 +56,6 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ### Objective-C
 
 ```objc
-#import <Pendo/Pendo.h>
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     /// Initialize Pendo
     [Pendo startWithApiKey:@"AWESOME_SAUCE"];
