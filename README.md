@@ -48,7 +48,7 @@ Pendo-iOS has been designed from the ground up to be non-intrusive and self-cont
 ```swift	
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     /// Initialize Pendo
-    Pendo.startWithApiKey("PENDO_API_KEY")
+    Pendo.startWithApiKey("AWESOME_SAUCE")
     return true
 }
 ```
