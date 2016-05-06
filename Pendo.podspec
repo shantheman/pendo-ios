@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name     = 'Pendo'
-    s.version  = '0.0.5'
+    s.version  = '0.0.6'
     s.summary  = 'Pengo agent for iOS'
     s.homepage = 'http://www.pendo.io'
     s.license  = 'Commercial'
