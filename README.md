@@ -19,9 +19,7 @@ Pendo is currently distributed as a static library. Follow these instructions to
   - Download [Pendo.zip](https://github.com/pendo-io/pendo-ios/releases/tag/0.0.6)
   - Unzip and copy libPendo.a and the headers to your project.
   - Go to `Other Linker Flags` on `Build Settings` and include `-all_load`.
-  - (Optional) Import the Pendo header on your bridging header if your project uses Swift. 
- 
-A note on installation: Once Pendo is publicly available, the SDK will be available on dependency management systems (e.g.: CocoaPods, Carthage).
+  - (Optional) Import the Pendo header on your bridging header if your project uses Swift.
 
 ## Dependency Managers
 
