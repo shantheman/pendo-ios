@@ -21,6 +21,11 @@ Pendo is currently distributed as a static library. Follow these instructions to
   - Go to `Other Linker Flags` on `Build Settings` and include `-all_load`.
   - (Optional) Import the Pendo header on your bridging header if your project uses Swift.
 
+	```
+	// BridgingHeaders.h
+	#import "Your/Path/Pendo.h"
+	```
+
 ## Dependency Managers
 
 ### Cocoapods
