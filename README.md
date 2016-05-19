@@ -16,7 +16,7 @@ Pendo: A Platform for Product Engagement. Include Pendo in your project to start
 
 Pendo is currently distributed as a static library. Follow these instructions to install Pendo:
 
-  - Download Pendo.zip
+  - Download [Pendo.zip](https://github.com/pendo-io/pendo-ios/releases/tag/0.0.6)
   - Unzip and copy libPendo.a and Pendo.h to your project.
   - Go to `Other Linker Flags` on `Build Settings` and include `-all_load`.
   - (Optional) Import the Pendo header on your bridging header if your project uses Swift. 
@@ -29,7 +29,7 @@ A note on installation: Once Pendo is publicly available, the SDK will be availa
 
 Add the following to your Podfile:
 
-`pod 'Pendo', '~> 0.0.5'`
+`pod 'Pendo', '~> 0.0.6'`
 
 If you are using Swift, you may need to add `Pendo.h` to your bridging header.
 
