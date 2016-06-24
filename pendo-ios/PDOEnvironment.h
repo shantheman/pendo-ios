@@ -27,6 +27,11 @@
 @property (strong, nonatomic, readonly, nonnull) NSString *osVersion;
 
 /**
+ iDevice type: iPhoneX, iPadY
+ */
+@property (strong, nonatomic, readonly, nonnull) NSString *device;
+
+/**
  Phone's carrier. E. g.: AT&T, Verizon, etc.
  */
 @property (strong, nonatomic, readonly, nonnull) NSString *carrier;
@@ -52,6 +57,6 @@
 /**
  Initialized an environment.
  */
-- (instancetype _Nonnull)initWithHardware:(NSString * _Nonnull)hardware osVersion:(NSString * _Nonnull)osVersion carrier:(NSString * _Nonnull)carrier appName:(NSString * _Nonnull)appName appVersion:(NSString * _Nonnull)appVersion libVersion:(NSString * _Nonnull)libVersion;
+- (instancetype _Nonnull)initWithHardware:(NSString * _Nonnull)hardware osVersion:(NSString * _Nonnull)osVersion device:(NSString * _Nonnull)device carrier:(NSString * _Nonnull)carrier appName:(NSString * _Nonnull)appName appVersion:(NSString * _Nonnull)appVersion libVersion:(NSString * _Nonnull)libVersion;
 
 @end
