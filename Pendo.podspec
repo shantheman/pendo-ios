@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
     s.ios.public_header_files = 'pendo-ios/*.h'
     s.ios.vendored_library = 'pendo-ios/libPendo.a'
 
-    s.frameworks = 'UIKit', 'Security'
+    s.frameworks = 'UIKit', 'Security', 'WebKit'
+    s.libraries = 'z'
     s.module_name = 'Pendo'
 
 end
