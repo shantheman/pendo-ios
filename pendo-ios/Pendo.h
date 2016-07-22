@@ -13,6 +13,7 @@
 #import "PDOEnvironment.h"
 
 @class PDOEvent;
+@class UIView;
 
 /**
  This handler's arguments are the available configurable options.
@@ -44,6 +45,8 @@ typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _
  */
 @property (strong, nonatomic, readonly, nonnull) PDOEnvironment *environment;
 
+@property (assign, nonatomic, getter=areGuidesEnabled) BOOL guidesEnabled;
+
 #pragma mark - Initialize
 /**
  Initialize the Pendo SDK using the given `apiKey`.
@@ -69,6 +72,9 @@ typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _
  
  */
 - (void)identify:(PDOIdentifyHandler _Nonnull)identifyHandler;
+
+#pragma mark - Launcher
+- (void)displayGuideLauncher:(UIView * _Nonnull)view;
 
 #pragma mark - Capture events
 /**
