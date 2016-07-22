@@ -114,7 +114,7 @@ Pendo can log to the Xcode's console all the events that are being captured and 
 
 ### Swift
 ```swift
-Pendo.sharedInstance().enabledLog()
+Pendo.sharedInstance().enableLog()
 ``` 
 
 ### Objective-C
