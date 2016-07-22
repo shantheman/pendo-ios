@@ -108,6 +108,20 @@ Pendo.sharedInstance().identify { visitor, account in
 }];
 ```
 
+## Enable logging
+
+Pendo can log to the Xcode's console all the events that are being captured and subsequently synced online.
+
+### Swift
+```swift
+Pendo.sharedInstance().enabledLog()
+``` 
+
+### Objective-C
+```objc
+[[Pendo sharedInstance] enableLog];
+```
+
 # Best Practices
 
 Here are some best practices to make the most out of Pendo:
