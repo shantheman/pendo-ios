@@ -45,7 +45,7 @@ typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _
  */
 @property (strong, nonatomic, readonly, nonnull) PDOEnvironment *environment;
 
-@property (assign, nonatomic, getter=areGuidesEnabled) BOOL guidesEnabled;
+// @property (assign, nonatomic, getter=areGuidesEnabled) BOOL guidesEnabled;
 
 #pragma mark - Initialize
 /**
@@ -73,17 +73,8 @@ typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _
  */
 - (void)identify:(PDOIdentifyHandler _Nonnull)identifyHandler;
 
-#pragma mark - Launcher
-- (void)displayGuideLauncher:(UIView * _Nonnull)view;
-
-#pragma mark - Capture events
-/**
- Records an event.
- 
- @param event: Event to record.
- 
- */
-- (void)recordEvent:(PDOEvent * _Nonnull)event;
+// #pragma mark - Launcher
+// - (void)displayGuideLauncher:(UIView * _Nonnull)view;
 
 #pragma mark - Log
 /**
