@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PDOSerializable.h"
+
 /**
  Represents a visitor
  */
-@interface PDOVisitor : NSObject
+@interface PDOVisitor : NSObject <PDOSerializable>
 
 /// Visitor's id
 @property (strong, nonatomic, nonnull) NSString *visitorId;
@@ -19,7 +21,8 @@
 /// Visitor's email
 @property (strong, nonatomic, nullable) NSString *email;
 
-/// Visitor's options
+/// Visitor's options. Since options will be serialialized, they must
+/// be on a JSON compatible format.
 @property (strong, nonatomic, nullable) NSDictionary *options;
 
 @end

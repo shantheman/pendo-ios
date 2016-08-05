@@ -22,7 +22,7 @@
  @param account: Current's account options.
  
  */
-typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _Nonnull account);
+// typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _Nonnull account);
 
 /**
  
@@ -46,6 +46,7 @@ typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _
 @property (strong, nonatomic, readonly, nonnull) PDOEnvironment *environment;
 
 // @property (assign, nonatomic, getter=areGuidesEnabled) BOOL guidesEnabled;
+@property (assign, nonatomic, getter=isEventCapturingEnabled) BOOL eventCapturingEnabled;
 
 #pragma mark - Initialize
 /**
@@ -71,7 +72,7 @@ typedef void (^PDOIdentifyHandler)(PDOVisitor * _Nonnull visitor, PDOAccount * _
  @param identifyHandler: Handler to identify current visitor and account.
  
  */
-- (void)identify:(PDOIdentifyHandler _Nonnull)identifyHandler;
+- (void)identify:(void(^_Nonnull)(PDOVisitor * _Nonnull visitor, PDOAccount * _Nonnull account))identifyHandler;
 
 // #pragma mark - Launcher
 // - (void)displayGuideLauncher:(UIView * _Nonnull)view;

@@ -8,15 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PDOSerializable.h"
+
 /**
  Represents an account.
  */
-@interface PDOAccount : NSObject
+@interface PDOAccount : NSObject<PDOSerializable>
 
 /// Account's id
 @property (strong, nonatomic, nullable) NSString *accountId;
 
-/// Account's options
+/// Account's options. Since options will be serialialized, they must
+/// be on a JSON compatible format.
 @property (strong, nonatomic, nullable) NSDictionary *options;
 
 @end

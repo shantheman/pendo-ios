@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		540DE0FF1CD7995800920138 /* PDOAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A41CD295C8004CFBCE /* PDOAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540DE1001CD7995800920138 /* PDOEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A51CD295C8004CFBCE /* PDOEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		540DE1011CD7995800920138 /* PDOSerialize.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A61CD295C8004CFBCE /* PDOSerialize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540DE1021CD7995800920138 /* PDOVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A71CD295C8004CFBCE /* PDOVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540DE1031CD7995800920138 /* Pendo.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C8C6A81CD295C8004CFBCE /* Pendo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		540DE1061CD7996F00920138 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540DE1041CD7996F00920138 /* CoreFoundation.framework */; };
@@ -18,6 +17,7 @@
 		540DE10C1CD79A0A00920138 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540DE10B1CD79A0A00920138 /* Security.framework */; };
 		540DE10E1CD79C1B00920138 /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
 		540DE1121CD7A0AE00920138 /* libPendo.a in Resources */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
+		544619E01D512E9100EFEC4D /* PDOSerializable.h in Headers */ = {isa = PBXBuildFile; fileRef = 544619DE1D512DCE00EFEC4D /* PDOSerializable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54C8C6A91CD295C8004CFBCE /* libPendo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8C6A31CD295C8004CFBCE /* libPendo.a */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +39,11 @@
 		540DE1051CD7996F00920138 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		540DE1091CD7998700920138 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		540DE10B1CD79A0A00920138 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		544619DE1D512DCE00EFEC4D /* PDOSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOSerializable.h; sourceTree = "<group>"; };
 		54C8C6A21CD295C8004CFBCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54C8C6A31CD295C8004CFBCE /* libPendo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPendo.a; sourceTree = "<group>"; };
 		54C8C6A41CD295C8004CFBCE /* PDOAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOAccount.h; sourceTree = "<group>"; };
 		54C8C6A51CD295C8004CFBCE /* PDOEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOEnvironment.h; sourceTree = "<group>"; };
-		54C8C6A61CD295C8004CFBCE /* PDOSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOSerialize.h; sourceTree = "<group>"; };
 		54C8C6A71CD295C8004CFBCE /* PDOVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDOVisitor.h; sourceTree = "<group>"; };
 		54C8C6A81CD295C8004CFBCE /* Pendo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pendo.h; sourceTree = "<group>"; };
 		54D4133D1CD2A08C00105DDC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				54C8C6A31CD295C8004CFBCE /* libPendo.a */,
 				54C8C6A41CD295C8004CFBCE /* PDOAccount.h */,
 				54C8C6A51CD295C8004CFBCE /* PDOEnvironment.h */,
-				54C8C6A61CD295C8004CFBCE /* PDOSerialize.h */,
+				544619DE1D512DCE00EFEC4D /* PDOSerializable.h */,
 				54C8C6A71CD295C8004CFBCE /* PDOVisitor.h */,
 				54C8C6A81CD295C8004CFBCE /* Pendo.h */,
 				540DE1081CD7997500920138 /* Frameworks */,
@@ -131,9 +131,9 @@
 			files = (
 				540DE0FF1CD7995800920138 /* PDOAccount.h in Headers */,
 				540DE1001CD7995800920138 /* PDOEnvironment.h in Headers */,
-				540DE1011CD7995800920138 /* PDOSerialize.h in Headers */,
 				540DE1021CD7995800920138 /* PDOVisitor.h in Headers */,
 				540DE1031CD7995800920138 /* Pendo.h in Headers */,
+				544619E01D512E9100EFEC4D /* PDOSerializable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

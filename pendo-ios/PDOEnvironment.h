@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#import "PDOSerialize.h"
+#import "PDOSerializable.h"
 
 /**
  Information about the environment where Pendo is running.
  */
-@interface PDOEnvironment : NSObject <PDOSerialize>
+@interface PDOEnvironment : NSObject <PDOSerializable>
 
 #pragma mark - About the device and its software
 /**
