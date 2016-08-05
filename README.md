@@ -131,6 +131,25 @@ Here are some best practices to make the most out of Pendo:
 1. Make your application accessible
   - Pendo uses the accessibility fields to assist tagging.
 
+# What does Pendo capture?
+
+Pendo currently captures the following items:
+
+1. Application events
+  - Did finish launching
+  - Did become active
+  - Will resign active
+2. View controller lifecycle
+  - View did appear
+  - View will disappear
+3. UIResponder actions 
+  - buttons
+  - segmented controls
+  - slider
+  - stepper
+  - table view cells
+  - text fields
+
 # Support
 
 We would love to hear from you: feedback, question, bugs, you name it. [Drop us a line](https://pendo.desk.com/customer/portal/emails/new) and a human will follow up. 
