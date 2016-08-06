@@ -122,6 +122,20 @@ Pendo.sharedInstance().enableLog()
 [[Pendo sharedInstance] enableLog];
 ```
 
+## Pause and resume capturing events
+
+Pendo can pause and resume capturing events.
+
+### Swift
+```swift
+Pendo.sharedInstance().eventCapturingEnabled = true
+``` 
+
+### Objective-C
+```objc
+[[Pendo sharedInstance] setEventCapturingEnabled:YES];
+```
+
 # Best Practices
 
 Here are some best practices to make the most out of Pendo:
