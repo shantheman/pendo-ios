@@ -5,7 +5,7 @@ Pendo: A Platform for Product Engagement. Include Pendo in your project to start
 
 # Requirements
 
-- iOS 7.0+
+- iOS 8.0+
 - Xcode 7+
 
 # Installation
@@ -16,7 +16,7 @@ Pendo: A Platform for Product Engagement. Include Pendo in your project to start
 
 Pendo is currently distributed as a static library. Follow these instructions to install Pendo:
 
-  - Download [pendo-ios-0.0.9.zip](https://github.com/pendo-io/pendo-ios/releases/tag/0.0.9)
+  - Download [pendo-ios-0.0.10.zip](https://github.com/pendo-io/pendo-ios/releases/tag/0.0.10)
   - Unzip and copy libPendo.a and the headers to your project.
   - Go to `Other Linker Flags` on `Build Settings` and include `-all_load`.
   - (Optional) Import the Pendo header on your bridging header if your project uses Swift.
@@ -32,7 +32,7 @@ Pendo is currently distributed as a static library. Follow these instructions to
 
 Add the following to your Podfile:
 
-`pod 'Pendo', '~> 0.0.6'`
+`pod 'Pendo', '~> 0.0.10'`
 
 If you are using Swift, you may need to add `Pendo.h` to your bridging header.
 
