@@ -20,6 +20,6 @@
 
 /// Account's options. Since options will be serialialized, they must
 /// be on a JSON compatible format.
-@property (strong, nonatomic, nullable) NSDictionary *options;
+@property (strong, nonatomic, nullable) NSDictionary<NSString *, id> *options;
 
 @end
