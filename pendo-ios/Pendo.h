@@ -83,4 +83,7 @@
  */
 - (Pendo * _Nonnull)enableLog;
 
+#pragma mark - Custom options
+- (void)updateOption:(NSString * _Nonnull)option toValue:(id _Nonnull)value;
+
 @end
