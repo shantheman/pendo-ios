@@ -58,6 +58,16 @@
  */
 + (Pendo * _Nonnull)startWithApiKey:(NSString * _Nonnull)apiKey;
 
+/**
+ Initialize the Pendo SDK using the given `apiKey` on a custom `domain`.
+ 
+ @param apiKey: Pendo Api Key
+ @param domain: Custom domain
+ @returns: Current Pendo instance
+ 
+ */
++ (Pendo * _Nonnull)startWithApiKey:(NSString * _Nonnull)apiKey domain:(NSString * _Nonnull)domain;
+
 #pragma mark - Shared Instance
 /**
  Returns the initialized Pendo instance.
