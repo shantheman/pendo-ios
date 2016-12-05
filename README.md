@@ -164,6 +164,14 @@ Pendo currently captures the following items:
   - table view cells
   - text fields
 
+# Turning on iOS analytics to view data
+
+Once you have data flowing into Pendo, log into the Pendo web application (app.pendo.io) as an Administrator.  Click your name in the bottom left corner, select "Site Settings", and then turn on the setting for "Enable iOS reporting".
+At this point you will start seeing options for iOS data throughout the application.  For example:
+  - on the dashboard there will be a widget called "Platoform Usage" that shows you web usage vs native iOS usage
+  - on the dashboard the visitor overview and account overview widgets let you pick between web traffic vs iOS traffic.
+  - on the visitor list page, when you edit the columns on the tables, you can pick certain attributes (such as days active, time on site, and number of events) by either web, or iOS
+
 # Support
 
 We would love to hear from you: feedback, question, bugs, you name it. [Drop us a line](https://pendo.desk.com/customer/portal/emails/new) and a human will follow up. 
